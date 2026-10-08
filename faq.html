@@ -55,7 +55,7 @@ function initAccordions(){
       // let the class carry the padding and icon state.
       var inner=panel.firstElementChild;
       panel.style.overflow="hidden";
-      panel.style.height=open&&inner?inner.scrollHeight+"px":"0px";
+      panel.style.height=open?panel.scrollHeight+"px":"0px";
     }
     function toggle(){
       var open=trigger.getAttribute("aria-expanded")==="true";
